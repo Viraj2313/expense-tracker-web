@@ -1,0 +1,9 @@
+const firebaseConfig = {
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL:process.env.DATABASEURL,
+    projectId: process.env.PRODUCT_ID,
+    storageBucket: process.env.STORAGEBUCKET,
+    messagingSenderId: MESSAGING_SENDING_ID,
+    appId: process.env.APP_ID
+};

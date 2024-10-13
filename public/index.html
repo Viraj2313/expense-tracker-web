@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Expense Tracker</h1>
+        </div>
+        <div class="balance-container">
+            <h2 id="currentDate">Current date: </h2>
+            <h2 id="currentBalance">Current Balance: </h2>
+        </div>
+        <div class="input-container">
+            <input type="text" id="expenseNameInput" placeholder="Expense Name">
+            <input type="number" id="amountSpentInput" placeholder="Amount Spent">
+            <button id="add">Add</button>
+        </div>
+        <div class="saved-transactions">
+            <h3>Expenses/Transactions</h3>
+            <ul id="cards"></ul>
+        </div>
+    </div>
+</body>
+</html>

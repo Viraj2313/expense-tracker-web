@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link to your CSS -->
+</head>
+<body>
+
+    <div>
+        <h1>Enter Username</h1>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button id="loginBtn">Login</button>
+    </div>
+    <script>
+        const usernameInput = document.getElementById("usernameInput");
+        const loginBtn = document.getElementById("loginBtn");
+        loginBtn.addEventListener('click', handleLogin);
+        function handleLogin(e) {
+            e.preventDefault(); // Prevent form submission
+            if (usernameInput.value === "") {
+                alert("Enter a username");
+            } else {
+                localStorage.setItem("username", usernameInput.value);
+                window.location.href = 'index.html';              
+            }
+        }
+    </script>
+</body>
+</html>
